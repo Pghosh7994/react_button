@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Inc_Button.css'
 const Inc_Button = () => {
 
     const [val, setVal] = useState(0);
@@ -16,8 +16,8 @@ const Inc_Button = () => {
     }
 
     return (
-        <div>
-            <div>
+        <div className='main'>
+            <div className='display'>
                 <h1> {val} </h1>
                 <div>
                     <button onClick={incval}>Add</button>
